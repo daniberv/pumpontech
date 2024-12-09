@@ -1,0 +1,45 @@
+.first_line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.6rem;
+}
+
+.total_referral_block {
+    border-radius: 24px;
+    padding: 1.2rem;
+    text-align: right;
+    background: #D3D1DC;
+    flex: 1 1 50%;
+}
+
+.total_ton_block {
+    border-radius: 24px;
+    padding: 1.2rem;
+    text-align: right;
+    background: #CDBEFF;
+    flex: 1 1 50%;
+}
+
+.total_points_block {
+    border-radius: 24px;
+    padding: 1.2rem;
+    text-align: right;
+    background: #F0E1D8;
+}
+
+.label {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.value {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.second_line {
+
+}

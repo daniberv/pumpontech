@@ -1,0 +1,11 @@
+.grid {
+    display: flex;
+    flex-direction: row;
+    gap: 0.6rem;
+    max-width: 360px;
+    margin: 0 auto;
+    overflow: hidden;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 1rem;
+}

@@ -1,0 +1,1 @@
+export { WalletMnemonics } from './WalletMnemonics'

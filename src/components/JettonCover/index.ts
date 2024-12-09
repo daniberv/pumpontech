@@ -1,0 +1,1 @@
+export { JettonCover } from './JettonCover'

@@ -1,0 +1,46 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    z-index: 901;
+    position: relative;
+}
+
+.left_label {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.left {
+    text-align: left;
+    flex: 1 0 50%;
+}
+
+.right_label {
+    color: #F53D0F;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.right {
+    text-align: right;
+    flex: 1 0 50%;
+}
+
+.left_value {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.06);
+    font-size: 24px;
+    padding: 0 0.2rem;
+    display: inline-block;
+}
+
+.right_value {
+    color: #F53D0F;
+    background: rgba(255, 255, 255, 0.06);
+    font-size: 24px;
+    padding: 0 0.2rem;
+    display: inline-block;
+}

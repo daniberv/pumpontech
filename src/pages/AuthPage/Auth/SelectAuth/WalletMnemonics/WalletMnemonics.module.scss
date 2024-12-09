@@ -1,0 +1,53 @@
+.wrapper {
+    background: #000;
+    height: 100vh;
+    padding-top: 3.2rem;
+}
+
+.inner_wrapper {
+    background: #19191A;
+    border-radius: 24px;
+    padding: 1.2rem 2.4rem;
+}
+
+.label {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 12px;
+}
+
+.header {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.words {
+    margin-top: 1.8rem;
+    columns: 2;
+}
+
+.word {
+    color: #F53D0F;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.save_it {
+    font-size: 17px;
+    color: #fff;
+    margin-top: 2.4rem;
+}
+
+.button_wrapper {
+    text-align: center;
+    margin-top: 2.4rem;
+}
+
+.next {
+    background: #F53D0F;
+    color: #000;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+}

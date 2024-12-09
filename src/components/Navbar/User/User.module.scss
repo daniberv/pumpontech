@@ -1,0 +1,18 @@
+.user {
+    display: flex;
+    gap: 0.6rem;
+    align-items: center;
+}
+
+.user_name {
+    color: #F53D0F;
+    background: transparent;
+    border-bottom: 1px dashed;
+}
+
+.user_photo {
+    background: #F53D0F;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}

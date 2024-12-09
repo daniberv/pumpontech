@@ -1,0 +1,1 @@
+export { JettonLegend } from './JettonLegend'

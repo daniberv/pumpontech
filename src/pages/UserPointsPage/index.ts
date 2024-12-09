@@ -1,0 +1,1 @@
+export { UserPointsPage } from './UserPointsPage'

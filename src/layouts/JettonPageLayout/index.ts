@@ -1,0 +1,1 @@
+export { JettonPageLayout } from './JettonPageLayout'

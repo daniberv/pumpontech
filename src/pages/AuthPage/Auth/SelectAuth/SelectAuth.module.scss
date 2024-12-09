@@ -1,0 +1,52 @@
+.wrapper {
+    background: #D3D1DC;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.anim {
+    display: block;
+    margin: 0 auto;
+    max-width: 212px;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    max-width: 120px;
+}
+
+.logos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0rem;
+    flex: 1 1 50%;
+}
+
+.buttons {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.4rem;
+}
+
+.create {
+    border-radius: 16px;
+    background: #6233FF;
+    color: #fff;
+    font-size: 14px;
+}
+
+.restore {
+    background: none;
+    color: rgba(0, 0, 0, 0.4);
+    margin-top: 2.4rem;
+}

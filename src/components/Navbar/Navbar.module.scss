@@ -1,0 +1,13 @@
+.navbar {
+    background: #19191A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 0.6rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 998;
+}

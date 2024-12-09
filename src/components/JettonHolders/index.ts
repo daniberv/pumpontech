@@ -1,0 +1,1 @@
+export { JettonHolders } from './JettonHolders'

@@ -1,0 +1,60 @@
+
+.wrapper {
+    position: absolute;
+    z-index: 998;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    user-select: none;
+    pointer-events: none;
+
+    &.opened {
+        pointer-events: all;
+    }
+}
+
+.pseudo_wrapper {
+    position: absolute;
+    z-index: 998;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(24px);
+    overflow: hidden;
+    opacity: 0;
+    user-select: none;
+    pointer-events: none;
+
+    &.opened {
+        opacity: 1;
+        pointer-events: all;
+    }
+}
+
+.container {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    background: #19191A;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    height: 0;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    overflow: hidden;
+
+    &.opened {
+        transition: all 0.5s ease;
+        height: auto;
+        padding: 2rem;
+    }
+}

@@ -1,0 +1,41 @@
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0.6rem;
+}
+
+.input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #4E26D1;
+    font-size: 24px;
+    color: #fff;
+
+    &::placeholder {
+        color: #8066FF;
+        font-size: 24px;
+    }
+}
+
+.btn_wrapper {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.preview {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(24px);
+    z-index: 999;
+}
+
+.inner_wrapper {
+    margin: 1rem;
+    background: #19191A;
+    color: #fff;
+}

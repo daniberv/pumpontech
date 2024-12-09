@@ -1,0 +1,1 @@
+export { JettonPoints } from './JettonPoints'

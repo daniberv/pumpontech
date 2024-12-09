@@ -1,0 +1,47 @@
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.6rem;
+    width: 100%;
+    font-size: 14px;
+}
+
+.date {
+    flex: 1 0 5.5rem;
+}
+
+.date {
+    flex: 1 0 5.5rem;
+}
+
+.type {
+    flex: 1 1 5.5rem;
+}
+
+.amount {
+    flex: 1 0 6.5rem;
+    text-align: right;
+}
+
+.currency {
+    flex: 1 0 2.5rem;
+}
+
+.pending {
+    flex: 0 0 8px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    background: transparent;
+}
+
+.success {
+    flex: 0 0 8px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #000;
+    border: 1px solid #000;
+}

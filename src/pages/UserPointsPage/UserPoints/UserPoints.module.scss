@@ -1,0 +1,45 @@
+.wrapper {
+    background: #F0E1D8;
+    border-radius: 24px;
+    margin-top: 1rem;
+}
+
+.balance {
+    color: #000;
+    font-size: 4rem;
+    font-weight: 600;
+    padding: 1rem 1rem 0.6rem 1rem;
+    text-align: right;
+    line-height: 1;
+    margin-bottom: 0;
+}
+
+.multiplier_line {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: start;
+    padding-right: 1rem;
+    text-align: right;
+}
+
+.multiplier_wrapper {
+    background: #6233FF;
+    font-family: Monocraft;
+    text-transform: uppercase;
+    padding-left: 1rem;
+}
+
+.multiplier_label {
+    font-size: 13px;
+    color: #A185FF;
+}
+
+.multiplier_value {
+    font-size: 13px;
+    color: #fff;
+}
+
+.balance_currency {
+    line-height: 1;
+}

@@ -1,0 +1,44 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0 0.6rem;
+}
+
+.image img {
+    border-radius: 8px;
+    width: 64px;
+    height: 64px;
+}
+
+.jetton_info {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    flex-direction: row;
+}
+
+.delete {
+    background: transparent;
+    border: none;
+    color: #fff;
+}
+
+.jetton_info {
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    line-height: 1;
+}
+
+.symbol {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.price {
+    font-size: 12px;
+}

@@ -1,0 +1,31 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 0.6rem;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.link {
+    font-size: 14px;
+    background: #000;
+    padding: 0.4rem 0.8rem;
+    border-radius: 80px;
+    color: #666666;
+    font-weight: 400;
+}
+
+.active {
+    font-size: 14px;
+    background: #452018;
+    color: #F53D0F;
+    padding: 0.4rem 0.8rem;
+    border-radius: 80px;
+    font-weight: 400;
+}

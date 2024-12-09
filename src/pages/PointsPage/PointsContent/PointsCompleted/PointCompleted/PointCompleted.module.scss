@@ -1,0 +1,48 @@
+.wrapper {
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 24px;
+    margin-left: 0.6rem;
+    margin-right: 0.6rem;
+    padding: 1.2rem;
+    margin-bottom: 0.6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task {
+    color: #8066FF;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.reward {
+    color: #fff;
+    font-size: 14px;
+}
+
+.pending {
+    flex: 0 0 8px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    background: transparent;
+}
+
+.success {
+    flex: 0 0 8px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #fff;
+    border: 1px solid #fff;
+}
+
+.data {
+    display: flex;
+    flex-direction: row;
+    gap: 1.2rem;
+    align-items: center;
+}

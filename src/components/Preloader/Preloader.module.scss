@@ -1,0 +1,17 @@
+.wrapper {
+    position: fixed;
+    top: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    background: #6233FF;
+    z-index: 9999999;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        max-width: 100%;
+    }
+}

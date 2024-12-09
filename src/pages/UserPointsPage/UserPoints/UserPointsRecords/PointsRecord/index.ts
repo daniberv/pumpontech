@@ -1,0 +1,1 @@
+export { PointsRecord } from './PointsRecord'

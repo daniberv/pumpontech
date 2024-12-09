@@ -1,0 +1,1 @@
+export { PointCompleted } from './PointCompleted'

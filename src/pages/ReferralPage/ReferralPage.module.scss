@@ -1,0 +1,38 @@
+.row {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.h1 {
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+    line-height: 1.1;
+    font-weight: normal;
+}
+
+.blockquote {
+    color: #8066FF;
+    font-size: 17px;
+    border-left: 1px solid #8066FF;
+    padding: 0.6rem;
+    margin: 1.2rem;
+    line-height: 1.4;
+}
+
+.name {
+    background: #6233FF;
+    color: #fff;
+    font-family: Monocraft;
+    flex: 0 0 4rem;
+    padding: 0 0.4rem;
+}
+
+.text {
+    color: #fff;
+    font-weight: 500;
+    font-size: 17px;
+}
