@@ -2,6 +2,7 @@ import api from "@/api";
 import { IJettonModel } from "./model";
 import { flow } from "lodash";
 import { applySnapshot } from "mobx-state-tree";
+import { ITransactionModel } from "./Transactions/transactionModel";
 
 export default (self: IJettonModel) => 
 	({
@@ -13,29 +14,17 @@ export default (self: IJettonModel) =>
                 const { dataHolders } = yield self.sync(api.jettons.getJettonHolders, { ...params }, options);
                 const { dataTransactions } = yield self.sync(api.jettons.getJettonTransactions, { ...params }, options);
 
-                // applySnapshot(self, {
-                //     ...data,
-                //     holders: dataHolders,
-                //     transactions: dataTransactions,
-                // })
+                applySnapshot(self, {
+                    ...data,
+                    holders: dataHolders,
+                    transactions: dataTransactions,
+                })
                 self.finishFetching();
             } catch (error) {
                 self.failFetching(error);
             }
         }),
-		// fetchHolders: flow(function* fetchHolders() {
-        //     console.log('SDASDAS')
-        //     try {
-        //         self.startFetching();
-
-        //         console.log('GO', self.id)
-        //         const { data } = yield self.sync(api.jettons.getJettonHolders, { id: self.id }, null);
-
-        //         // self.holders = data;
-        //         self.finishFetching();
-        //     } catch (error) {
-        //         console.log('ERROR', error)
-        //         self.failFetching(error);
-        //     }
-        // }),
+        addTransaction(tx: ITransactionModel) {
+            self.transactions?.add(tx);
+        }
 	})

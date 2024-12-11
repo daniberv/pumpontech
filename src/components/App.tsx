@@ -8,6 +8,7 @@ import '@telegram-apps/telegram-ui/dist/styles.css';
 import { AuthProvider } from "@/providers/AuthProvider";
 import { createStore, StoreProvider } from "@/providers/StoreProvider";
 import { Toaster } from "react-hot-toast";
+import { SocketProvider } from "@/providers/SocketProvider";
 
 const store = createStore()
 
@@ -20,15 +21,17 @@ function App() {
       platform={['macos', 'ios'].includes(lp.platform) ? 'ios' : 'base'}
     >
       <StoreProvider store={store}>
-        <AuthProvider>
-          <Toaster />
-          <BrowserRouter>
-            <Routes>
-              {routes.map((route) => <Route key={route.path} {...route} />)}
-              <Route path="*" element={<Navigate to="/"/>}/>
-            </Routes>
-          </BrowserRouter>
-        </AuthProvider>
+        <SocketProvider>
+          <AuthProvider>
+            <Toaster />
+            <BrowserRouter>
+              <Routes>
+                {routes.map((route) => <Route key={route.path} {...route} />)}
+                <Route path="*" element={<Navigate to="/"/>}/>
+              </Routes>
+            </BrowserRouter>
+          </AuthProvider>
+        </SocketProvider>
       </StoreProvider>
     </AppRoot>
   )

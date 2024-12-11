@@ -3,7 +3,7 @@ import { AuthorModel } from "./Author/model";
 import { SocialsModel } from "./Socials/model";
 import { JettonChartModel } from "../JettonChart";
 import { HoldersModel } from "./Holder/model";
-import { TransactionsModel } from "./Transactions/model";
+import { Transactions } from "./Transactions";
 import Fetchable from "@/store/abstract/Fetchable";
 import { Syncable } from "@/store/abstract/Syncable";
 
@@ -30,7 +30,7 @@ const JettonModel = t.compose(
         links: t.maybeNull(SocialsModel),
         chart: t.maybeNull(JettonChartModel),
         holders: t.maybeNull(HoldersModel),
-        transactions: t.maybeNull(TransactionsModel),
+        transactions: t.maybeNull(Transactions),
     }),
     Fetchable(),
     Syncable,

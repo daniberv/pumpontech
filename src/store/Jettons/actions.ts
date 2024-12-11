@@ -1,7 +1,14 @@
-import { applySnapshot, flow } from "mobx-state-tree";
+import { flow } from "mobx-state-tree";
 import { IJettonModel } from "./Jetton/model";
 import { IJettonsModel } from "./model"
 import api from "@/api";
+import { ITransactionModel } from "./Jetton/Transactions/transactionModel";
+
+export type IJettonTransactionData = {
+	id: number
+	tx: ITransactionModel
+
+}
 
 export default (self: IJettonsModel) => 
 	({
@@ -26,4 +33,19 @@ export default (self: IJettonsModel) =>
 				self.failFetching(error);
 			}
 		}),
+		add(item: IJettonModel) {
+			self.items.set(item.id, item);
+		},
+		update(item: IJettonModel) {
+			self.items.set(item.id, item);
+		},
+		addTransaction(data: IJettonTransactionData) {
+			const { id, tx } = data;
+
+			const jetton = self.findWhere({ id });
+
+			if (jetton) {
+				jetton.addTransaction(tx);
+			}
+		}
 	})

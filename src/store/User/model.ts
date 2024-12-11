@@ -18,6 +18,8 @@ const UserModel = t.compose(
         points_level: t.optional(t.string, 'none'),
         points_completed: t.optional(PointTasks, {}),
         points_available: t.optional(PointTasks, {}),
+        // balance_history: t.optional(BalanceRecords, {}),
+        // points_history: t.optional(PointsRecords, {}),
     }),
     Syncable,
     Fetchable(),
@@ -37,14 +39,14 @@ export default UserModel
 export type { IUserModel }
 
 // ton_keeper
-// wallet_address,
+// pu,
 // public_key,
 // network_id,
 //
 // back jwt
 
 
-// external
+// inner
 // init_data_row
 // 
 // back wallet_address
