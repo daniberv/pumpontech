@@ -32,7 +32,7 @@ const AuthProvider = ({ children }) => {
 
     useEffect(() => {
         expandViewport();
-        postEvent("web_app_request_viewport");
+        postEvent("web_app_request_fullscreen");
     }, [])
 
     useEffect(() => {
