@@ -1,4 +1,4 @@
-import { initData, useSignal } from "@telegram-apps/sdk-react";
+import { initData, useSignal, expandViewport, postEvent } from "@telegram-apps/sdk-react";
 import { useContext, createContext, useMemo, useState, useEffect } from "react";
 const AuthContext = createContext(null);
 
@@ -29,6 +29,11 @@ const AuthProvider = ({ children }) => {
             ? getUserRows(initDataState.user)
             : undefined;
         }, [initDataState]);
+
+    useEffect(() => {
+        expandViewport();
+        postEvent("web_app_request_viewport");
+    }, [])
 
     useEffect(() => {
         if (userRows?.username) setUserName(userRows?.username)
