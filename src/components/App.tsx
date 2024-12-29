@@ -9,6 +9,7 @@ import { AuthProvider } from "@/providers/AuthProvider";
 import { createStore, StoreProvider } from "@/providers/StoreProvider";
 import { Toaster } from "react-hot-toast";
 import { SocketProvider } from "@/providers/SocketProvider";
+import { GuideProvider } from "@/providers/GuideProvider";
 
 const store = createStore()
 
@@ -20,19 +21,21 @@ function App() {
       appearance={'dark'}
       platform={['macos', 'ios'].includes(lp.platform) ? 'ios' : 'base'}
     >
-      <StoreProvider store={store}>
-        <SocketProvider>
-          <AuthProvider>
-            <Toaster />
-            <BrowserRouter>
-              <Routes>
-                {routes.map((route) => <Route key={route.path} {...route} />)}
-                <Route path="*" element={<Navigate to="/"/>}/>
-              </Routes>
-            </BrowserRouter>
-          </AuthProvider>
-        </SocketProvider>
-      </StoreProvider>
+      <GuideProvider>
+        <StoreProvider store={store}>
+          <SocketProvider>
+            <AuthProvider>
+              <Toaster />
+              <BrowserRouter>
+                <Routes>
+                  {routes.map((route) => <Route key={route.path} {...route} />)}
+                  <Route path="*" element={<Navigate to="/"/>}/>
+                </Routes>
+              </BrowserRouter>
+            </AuthProvider>
+          </SocketProvider>
+        </StoreProvider>
+      </GuideProvider>
     </AppRoot>
   )
 }

@@ -3,8 +3,7 @@ import react from '@vitejs/plugin-react'
 import fs from 'fs'
 
 export default ({ mode }) => {
-  console.log('MODE HERE', mode)
-  if (mode === "development") {
+  if (mode == "development") {
     return defineConfig({
       plugins: [react()],
       resolve: {
